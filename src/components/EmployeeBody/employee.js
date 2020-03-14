@@ -9,12 +9,10 @@ const Employee = () => {
     const [employee,setEmployee]= useState(fakeData);
     const [cart,setCart]=useState([])
 
-    const handleAddEmployee=(employee)=>{
-        
+    const handleAddEmployee=(employee)=>{   
         const newCart=[...cart,employee];
         setCart(newCart);
     }
-
     return (
         <div className="main-container">
            <div className="employee-container">
